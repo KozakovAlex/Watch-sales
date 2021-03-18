@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ff0000">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header__wrapper">
+        <div class="main-header__logo">
+          <a href="./index.html" class="main-header__logo-link">
+            <img src="./img/header-ellipse.png" alt="ellipse" class="main-header__logo-pic">
+            <p class="main-header__logo-title">CONQUEST</p>
+          </a>
+        </div>
+        <nav class="main-header__main-menu">
+          <ul class="main-header__main-menu-list">
+            <li class="main-header__main-menu-item">
+              <a href="./catalog.html" class="main-menu-item-link">Каталог</a>
+            </li>
+            <li class="main-header__main-menu-item">
+              <a href="#!" class="main-menu-item-link">Акции</a>
+            </li>
+            <li class="main-header__main-menu-item">
+              <a href="#!" class="main-menu-item-link">Доставка</a>
+            </li>
+            <li class="main-header__main-menu-item">
+              <a href="#!" class="main-menu-item-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__add-menu">
+          <ul class="main-header__add-menu-list">
+            <li class="main-header__add-menu-item">
+              <img src="./img/header-search-pic.svg" alt="search" class="add-menu-pic">
+            </li>
+            <li class="main-header__add-menu-item">
+              <img src="./img/header-like-pic.svg" alt="like" class="add-menu-pic">
+            </li>
+            <li class="main-header__add-menu-item">
+              <img src="./img/header-basket-pic.svg" alt="basket" class="add-menu-pic">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <ul class="breadcrumbs breadcrumbs_catalogpage">
+        <li class="breadcrumbs__item">
+          <a href="./index.html" class="breadcrumbs__link">Главная &gt;</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="./catalog.html" class="breadcrumbs__link">Каталог &gt;</a>
+        </li>
+        <li class="breadcrumbs__item">
+          Мужские часы
+        </li>
+      </ul>
+
+      <section class="catalog">
+        <div class="catalog__wrapper">
+
+          <div class="title__wrapper">
+            <h2 class="main-title">Мужские часы</h2>
+            <div class="filter__wrapper">
+              <p class="filter-text">Сортировать по:</p>
+              <select name="filter-select" id="filter-select" class="filter-select">
+                <option value="all" class="filter-select-item">все</option>
+                <option value="price" class="filter-select-item">цене</option>
+                <option value="popularity" class="filter-select-item" selected>популярности</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="catalog-cards">
+
+            <div class="catalog-cards__filter">
+              <form action="#!" class="filter-form">
+
+                <fieldset class="filter-form__field">
+                  <div class="filter-form__header">
+                    <legend class="filter-form__legend">Стоимость</legend>
+                    <p class="filter-form__mark">+</p>
+                  </div>
+                  <div class="filter-form__select js-hidden">
+                    <input type="range" class="filter-form__price">
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter-form__field">
+                  <div class="filter-form__header">
+                    <legend class="filter-form__legend">Бренд</legend>
+                    <p class="filter-form__mark">+</p>
+                  </div>
+                  <div class="filter-form__select js-hidden">
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="techne" value="Techne">
+                      Techne
+                    </label>
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="rado" value="Rado">
+                      Rado
+                    </label>
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="bvlgari" value="Bvlgari">
+                      Bvlgari
+                    </label>
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="tissot" value="Tissot">
+                      Tissot
+                    </label>
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="omega" value="Omega">
+                      Omega
+                    </label>
+                    <label class="filter-form__label">
+                      <input type="checkbox" name="brand" id="montblanc" value="Montblanc">
+                      Montblanc
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter-form__field">
+                  <div class="filter-form__header">
+                    <legend class="filter-form__legend">Механизм</legend>
+                    <p class="filter-form__mark">+</p>
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter-form__field">
+                  <div class="filter-form__header">
+                    <legend class="filter-form__legend">Материал</legend>
+                    <p class="filter-form__mark">+</p>
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter-form__field">
+                  <div class="filter-form__header">
+                    <legend class="filter-form__legend">Цвет</legend>
+                    <p class="filter-form__mark">+</p>
+                  </div>
+                </fieldset>
+                <button class="filter-form__button">СБРОСИТЬ ФИЛЬТР</button>
+              </form>
+            </div>
+
+            <div class="catalog-cards__catalog">
+              <div class="catalog-cards__items">
+
+                <div class="catalog-cards__item">
+                  <a href="./card.html" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">12 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch1.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">12 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch2.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">15 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch3.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">15 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch4.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">12 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch5.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__advert">
+                  <div class="advert__data">
+                    <p class="advert__data-price">
+                      -20%
+                    </p>
+                    <p class="advert__data-descr">
+                      НА ВТОРУЮ ПОЗИЦИЮ В ЧЕКЕ
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">BVLGARI</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">72 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch6.png" alt="BVLGARI" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">TECHNE</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">22 700</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch7.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+  
+                <div class="catalog-cards__item">
+                  <a href="#!" class="catalog-cards__item-link">
+                    <div class="catalog-cards__item-info">
+                      <div class="catalog-cards__item-header">
+                        <h3 class="catalog-cards__item-name">RADO</h3>
+                        <ul class="catalog-cards__item-nav">
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                          </li>
+                          <li class="catalog-cards__item-bit">
+                            <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="catalog-cards__item-price">
+                        <p class="catalog-cards__item-price-value">22 000</p>
+                        <p class="js-rouble catalog_rouble"></p>
+                      </div>
+                    </div>
+                    <img src="./img/catalog-watch8.png" alt="TECHNE" class="catalog-cards__item-pic">
+                  </a>
+                </div>
+              </div>
+              <div class="catalog-cards__counter">
+                < 1  2  3  ...  12 >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="add-catalog">
+        <div class="add-catalog__wrapper">
+
+          <div class="add-catalog__header">
+            <h2 class="main-title add-catalog__title">Ремешки</h2>
+            <a href="#!" class="add-catalog__link ">Смотреть все</a>
+          </div>
+
+          <div class="add-catalog__cards">
+            <img src="./img/arrow_left.png" alt="arrow" class="add-catalog__cards-arrow-left">
+            <img src="./img/arrow_right.png" alt="arrow" class="add-catalog__cards-arrow-right">
+
+            <div class="catalog-cards__item">
+              <a href="#!" class="catalog-cards__item-link">
+                <div class="catalog-cards__item-info">
+                  <div class="catalog-cards__item-header">
+                    <h3 class="catalog-cards__item-name">GEORG JENSEN</h3>
+                    <ul class="catalog-cards__item-nav">
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                      </li>
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="catalog-cards__item-price">
+                    <p class="catalog-cards__item-price-value">6 500</p>
+                    <p class="js-rouble catalog_rouble"></p>
+                  </div>
+                </div>
+                <img src="./img/add-catalog-strap1.png" alt="GEORG JENSEN" class="catalog-cards__item-pic">
+              </a>
+            </div>
+
+            <div class="catalog-cards__item">
+              <a href="#!" class="catalog-cards__item-link">
+                <div class="catalog-cards__item-info">
+                  <div class="catalog-cards__item-header">
+                    <h3 class="catalog-cards__item-name">NATO</h3>
+                    <ul class="catalog-cards__item-nav">
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                      </li>
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="catalog-cards__item-price">
+                    <p class="catalog-cards__item-price-value">3 200</p>
+                    <p class="js-rouble catalog_rouble"></p>
+                  </div>
+                </div>
+                <img src="./img/add-catalog-strap2.png" alt="NATO" class="catalog-cards__item-pic">
+              </a>
+            </div>
+
+            <div class="catalog-cards__item">
+              <a href="#!" class="catalog-cards__item-link">
+                <div class="catalog-cards__item-info">
+                  <div class="catalog-cards__item-header">
+                    <h3 class="catalog-cards__item-name">SPARK</h3>
+                    <ul class="catalog-cards__item-nav">
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-like-pic.svg" alt="like" class="catalog-cards__item-bit-pic">
+                      </li>
+                      <li class="catalog-cards__item-bit">
+                        <img src="./img/header-basket-pic.svg" alt="basket" class="catalog-cards__item-bit-pic">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="catalog-cards__item-price">
+                    <p class="catalog-cards__item-price-value">5 400</p>
+                    <p class="js-rouble catalog_rouble"></p>
+                  </div>
+                </div>
+                <img src="./img/add-catalog-strap3.png" alt="SPARK" class="catalog-cards__item-pic">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__wrapper">
+
+        <div class="main-footer__logo">
+          <a href="#!" class="main-footer__logo-link">
+            <img src="./img/footer-ellipse.png" alt="ellipse" class="main-footer__logo-pic">
+            <p class="main-footer__logo-title">CONQUEST</p>
+          </a>
+          <ul class="main-footer__logo-list">
+            <li class="main-footer__logo-item">8 (499) 450-47-97</li>
+            <li class="main-footer__logo-item">info@conquest.watch.ru</li>
+          </ul>
+        </div>
+
+        <div class="main-footer__chapter">
+          <h3 class="main-footer__chapter-title">о компании</h3>
+          <ul class="main-footer__chapter-list">
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Наши магазины</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Вакансии</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Сертификаты</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__chapter">
+          <h3 class="main-footer__chapter-title">покупателям</h3>
+          <ul class="main-footer__chapter-list">
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Каталог товаров</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Как заказать?</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">FAQ</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Корпоративным клиентам</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__chapter">
+          <h3 class="main-footer__chapter-title">оплата и доставка</h3>
+          <ul class="main-footer__chapter-list">
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Способы оплаты</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Время доставки</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Гарантии и ремонт</a>
+            </li>
+            <li class="main-footer__chapter-item">
+              <a href="#!" class="main-footer__chapter-link">Возврат и компенсация</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
