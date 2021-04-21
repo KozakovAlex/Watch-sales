@@ -1,3 +1,17 @@
+let mainHeader = document.querySelector('.main-header');
+// let upButton = document.querySelector('up-button');
+
+(function () {
+  window.onscroll = () => {
+    if (window.pageYOffset > 79) {
+      mainHeader.classList.add('main-header_active');
+    } else {
+      mainHeader.classList.remove('main-header_active');
+    }
+  }
+}());
+
+
 let roubles = document.querySelectorAll('.js-rouble');
 
 for(let rouble of roubles) {
