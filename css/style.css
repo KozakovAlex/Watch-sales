@@ -1342,5 +1342,60 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-header__wrapper {
+    padding: 15px 0;
+  }
+  .main-header__main-menu-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .promo {
+    margin-top: 50px;
+  }
+  .promo_rouble::before {
+    display: none;
+  }
+  .promo__property-wrapper {
+    right: 0;
+  }
+  .promo__property-value::before {
+    display: none;
+  }
+  .popular__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news__text-column {
+    padding: ;
+  }
+  .news__title {
+    margin-bottom: 20px;
+  }
+  .news__text-column-descr {
+    margin-bottom: 20px;
+  }
+  .main-footer__wrapper {
+    padding: 40px 20px;
+  }
+  .breadcrumbs_catalogpage {
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+  .breadcrumbs_cardpage {
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+  .card__wrapper {
+    column-gap: 10px;
+  }
+  .card__text-price {
+    margin-bottom: 20px;
+  }
+  .card__text-title {
+    margin-bottom: 20px;
+  }
+ }
+ 
+
 /* Media end */
 
