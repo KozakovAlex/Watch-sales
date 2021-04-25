@@ -1509,6 +1509,51 @@ img {
   .news__socials {
     margin-bottom: 20px;
   }
+  .main-footer__wrapper {
+    padding: 20px;
+  }
+  .main-footer__logo {
+    width: 50%;
+  }
+  .main-footer__chapter {
+    width: 50%;
+  }
+  .main-footer__chapter-title {
+    margin-bottom: 15px;
+  }
+  .main-footer__chapter-item {
+    margin-bottom: 10px;
+  }
+  .catalog-cards__items {
+    row-gap: 20px;
+  }
+  .add-catalog {
+    margin-bottom: 20px;
+  }
+  .add-catalog__cards .catalog-cards__item:not(:first-of-type) {
+    display: none;
+  }
+  .add-catalog__header {
+    margin-bottom: 10px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card__wrapper {
+    flex-wrap: wrap;
+  }
+  .card__img-column {
+    flex-basis: 100%;
+  }
+  .card__img-sm-wrap {
+    justify-content: space-between;
+  }
+  .card__text-column {
+    flex-basis: 100%;
+  }
+  .card__text-text {
+    margin-bottom: 15px;
+  }
  }
  
 
