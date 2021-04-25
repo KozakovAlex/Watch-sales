@@ -33,3 +33,21 @@ for(let i = 0; i < filterFormHeaders.length; i++) {
   }
 }
 
+let mainHeaderMainMenu = document.querySelector('.main-header__main-menu');
+let mainHeaderMenu = document.querySelector('.main-header__burger');
+let burgerLineTop = document.querySelector('.burger-line-top');
+let burgerLineMiddle = document.querySelector('.burger-line-middle');
+let burgerLineBottom = document.querySelector('.burger-line-bottom');
+let promo = document.querySelector('.promo');
+let breadcrumbs = document.querySelector('.breadcrumbs');
+
+mainHeaderMenu.onclick = function() {
+  mainHeaderMainMenu.classList.toggle('main-header__main-menu_active');
+  burgerLineTop.classList.toggle('burger-line-top_active');
+  burgerLineMiddle.classList.toggle('burger-line-middle_active');
+  burgerLineBottom.classList.toggle('burger-line-bottom_active');
+  promo.classList.toggle('promo_active');
+  breadcrumbs.classList.toggle('breadcrumbs_active');
+  
+}
+
