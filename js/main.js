@@ -50,4 +50,3 @@ mainHeaderMenu.onclick = function() {
   breadcrumbs.classList.toggle('breadcrumbs_active');
   
 }
-
