@@ -1,15 +1,21 @@
 let mainHeader = document.querySelector('.main-header');
-// let upButton = document.querySelector('up-button');
+let upButton = document.querySelector('.up-button');
 
 (function () {
   window.onscroll = () => {
     if (window.pageYOffset > 79) {
       mainHeader.classList.add('main-header_active');
+      upButton.classList.add('up-button_shown');
     } else {
       mainHeader.classList.remove('main-header_active');
+      upButton.classList.remove('up-button_shown');
     }
   }
 }());
+
+upButton.onclick = function() {
+  window.scrollTo(0, 0);
+}
 
 
 let roubles = document.querySelectorAll('.js-rouble');

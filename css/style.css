@@ -232,7 +232,6 @@ img {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
 /* Header styles end */
 
 
@@ -1288,6 +1287,19 @@ img {
 /* JS styles start */
 .js-hidden {
   display: none;
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.up-button_shown {
+  display: block;
 }
 
 /* JS styles end */
