@@ -1582,6 +1582,10 @@ img {
   .card__text-text {
     margin-bottom: 15px;
   }
+  .up-button {
+    right: 20px;
+    bottom: 20px;
+  }
  }
 
  @media screen and (max-width: 500px) {
