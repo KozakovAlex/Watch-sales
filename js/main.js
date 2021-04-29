@@ -17,7 +17,6 @@ upButton.onclick = function() {
   window.scrollTo(0, 0);
 }
 
-
 let roubles = document.querySelectorAll('.js-rouble');
 
 for(let rouble of roubles) {
@@ -39,13 +38,13 @@ for(let i = 0; i < filterFormHeaders.length; i++) {
   }
 }
 
+let breadcrumbs = document.querySelector('.breadcrumbs');
 let mainHeaderMainMenu = document.querySelector('.main-header__main-menu');
 let mainHeaderMenu = document.querySelector('.main-header__burger');
 let burgerLineTop = document.querySelector('.burger-line-top');
 let burgerLineMiddle = document.querySelector('.burger-line-middle');
 let burgerLineBottom = document.querySelector('.burger-line-bottom');
 let promo = document.querySelector('.promo');
-let breadcrumbs = document.querySelector('.breadcrumbs');
 
 mainHeaderMenu.onclick = function() {
   mainHeaderMainMenu.classList.toggle('main-header__main-menu_active');
@@ -54,5 +53,23 @@ mainHeaderMenu.onclick = function() {
   burgerLineBottom.classList.toggle('burger-line-bottom_active');
   promo.classList.toggle('promo_active');
   breadcrumbs.classList.toggle('breadcrumbs_active');
-  
+}
+
+let textSubtitleDescr = document.querySelector('.text-subtitle-descr');
+let textSubtitleTechs = document.querySelector('.text-subtitle-techs');
+let textDescr = document.querySelector('.text-descr');
+let textTechs = document.querySelector('.text-techs');
+
+textSubtitleTechs.onclick = function() {
+  textSubtitleTechs.classList.add('text-subtitle-active');
+  textSubtitleDescr.classList.remove('text-subtitle-active');
+  textDescr.style.display = 'none';
+  textTechs.style.display = 'block';
+}
+
+textSubtitleDescr.onclick = function() {
+  textSubtitleTechs.classList.remove('text-subtitle-active');
+  textSubtitleDescr.classList.add('text-subtitle-active');
+  textTechs.style.display = 'none';
+  textDescr.style.display = 'block';
 }

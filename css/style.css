@@ -1243,7 +1243,7 @@ img {
   color: #686868;
 }
 
-.card__text-descr {
+.card__text-info {
   display: flex;
   flex-direction: column;
 }
@@ -1262,9 +1262,16 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #444240;
+  cursor: pointer;
 }
 
-.card__text-subtitle:first-child {
+.card__text-subtitle:hover {
+  background-color: rgba(234, 227, 212, 0.95);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.text-subtitle-active {
   border-bottom: 1px solid #C4C0B6;
 }
 
@@ -1274,6 +1281,10 @@ img {
   font-size: 14px;
   line-height: 23px;
   color: #000000;
+}
+
+.text-techs {
+  display: none;
 }
 
 .card_button {
