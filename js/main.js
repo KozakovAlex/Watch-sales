@@ -4,10 +4,10 @@ let upButton = document.querySelector('.up-button');
 (function () {
   window.onscroll = () => {
     if (window.pageYOffset > 79) {
-      mainHeader.classList.add('main-header_active');
+      // mainHeader.classList.add('main-header_active');
       upButton.classList.add('up-button_shown');
     } else {
-      mainHeader.classList.remove('main-header_active');
+      // mainHeader.classList.remove('main-header_active');
       upButton.classList.remove('up-button_shown');
     }
   }
@@ -38,22 +38,30 @@ for(let i = 0; i < filterFormHeaders.length; i++) {
   }
 }
 
-let breadcrumbs = document.querySelector('.breadcrumbs');
 let mainHeaderMainMenu = document.querySelector('.main-header__main-menu');
+let mainMenuItemLinks = document.querySelectorAll('.main-menu-item-link');
 let mainHeaderMenu = document.querySelector('.main-header__burger');
 let burgerLineTop = document.querySelector('.burger-line-top');
 let burgerLineMiddle = document.querySelector('.burger-line-middle');
 let burgerLineBottom = document.querySelector('.burger-line-bottom');
-let promo = document.querySelector('.promo');
 
 mainHeaderMenu.onclick = function() {
   mainHeaderMainMenu.classList.toggle('main-header__main-menu_active');
   burgerLineTop.classList.toggle('burger-line-top_active');
   burgerLineMiddle.classList.toggle('burger-line-middle_active');
   burgerLineBottom.classList.toggle('burger-line-bottom_active');
-  promo.classList.toggle('promo_active');
-  breadcrumbs.classList.toggle('breadcrumbs_active');
+  for (let mainMenuItemLink of mainMenuItemLinks) {
+    mainMenuItemLink.classList.toggle('main-menu-item-link_active');
+  }
 }
+
+let catalogButtonFilter = document.querySelector('.catalog__button-filter');
+let catalogCardsFilter = document.querySelector('.catalog-cards__filter');
+catalogButtonFilter.onclick = function() {
+  catalogCardsFilter.classList.toggle('catalog-cards__filter_active');
+}
+
+
 
 let textSubtitleDescr = document.querySelector('.text-subtitle-descr');
 let textSubtitleTechs = document.querySelector('.text-subtitle-techs');
@@ -63,13 +71,18 @@ let textTechs = document.querySelector('.text-techs');
 textSubtitleTechs.onclick = function() {
   textSubtitleTechs.classList.add('text-subtitle-active');
   textSubtitleDescr.classList.remove('text-subtitle-active');
-  textDescr.style.display = 'none';
-  textTechs.style.display = 'block';
+  textDescr.classList.toggle('js-hidden');
+  textTechs.classList.toggle('js-hidden');
+  // textDescr.style.display = 'none';
+  // textTechs.style.display = 'block';
 }
 
 textSubtitleDescr.onclick = function() {
   textSubtitleTechs.classList.remove('text-subtitle-active');
   textSubtitleDescr.classList.add('text-subtitle-active');
-  textTechs.style.display = 'none';
-  textDescr.style.display = 'block';
+  textDescr.classList.toggle('js-hidden');
+  textTechs.classList.toggle('js-hidden');
+  // textTechs.style.display = 'none';
+  // textDescr.style.display = 'block';
 }
+
