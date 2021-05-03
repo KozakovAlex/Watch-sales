@@ -1618,6 +1618,10 @@ img {
   .catalog-cards__filter_active {
     transform: none;
   }
+  .filter-form__button {
+    border: 2px solid #1B1A17;
+    padding: 10px 5px;
+  }
   .catalog-cards__items {
     row-gap: 20px;
   }
