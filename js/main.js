@@ -18,7 +18,6 @@ upButton.onclick = function() {
 }
 
 let roubles = document.querySelectorAll('.js-rouble');
-
 for(let rouble of roubles) {
   rouble.textContent = '\u20bd';
 }
@@ -26,7 +25,6 @@ for(let rouble of roubles) {
 let filterFormHeaders = document.querySelectorAll('.filter-form__header');
 let filterFormMarks = document.querySelectorAll('.filter-form__mark');
 let filterFormSelects = document.querySelectorAll('.filter-form__select');
-
 for(let i = 0; i < filterFormHeaders.length; i++) {
   filterFormHeaders[i].onclick = function() {
     filterFormSelects[i].classList.toggle('js-hidden');
@@ -44,7 +42,6 @@ let mainHeaderMenu = document.querySelector('.main-header__burger');
 let burgerLineTop = document.querySelector('.burger-line-top');
 let burgerLineMiddle = document.querySelector('.burger-line-middle');
 let burgerLineBottom = document.querySelector('.burger-line-bottom');
-
 mainHeaderMenu.onclick = function() {
   mainHeaderMainMenu.classList.toggle('main-header__main-menu_active');
   burgerLineTop.classList.toggle('burger-line-top_active');
@@ -57,9 +54,19 @@ mainHeaderMenu.onclick = function() {
 
 let catalogButtonFilter = document.querySelector('.catalog__button-filter');
 let catalogCardsFilter = document.querySelector('.catalog-cards__filter');
-catalogButtonFilter.onclick = function() {
-  catalogCardsFilter.classList.toggle('catalog-cards__filter_active');
+if (catalogButtonFilter) {
+  catalogButtonFilter.onclick = function() {
+    catalogCardsFilter.classList.toggle('catalog-cards__filter_active');
+  }
 }
+
+// let cardsItems = document.querySelectorAll('.cards__item');
+// if (cardsItems.length % 2 !== 0) {
+//   console.log(cardsItems.length);
+//   cardsItems[cardsItems.length - 1].classList.add('last-card-wrapper');
+// }
+
+
 
 
 
