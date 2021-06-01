@@ -30,12 +30,53 @@ let picturesSrc = [
 
 let mainCardPic = document.querySelector('.card__img-lg');
 let cardsPic = document.querySelectorAll('.card__img-sm');
+let cardArrowLeft = document.querySelector('.card__img-arrow-left');
+let cardArrowRight = document.querySelector('.card__img-arrow-right');
 
-// let newCardsPic = cardsPic.splice(0, 2);
-// console.log(cardsPic);
+let currentCardPic = cardsPic[0];
+let currentIndex = 0;
+
+currentCardPic.classList.add('card__img-sm_selected');
 
 for (let i = 0; i < cardsPic.length; i++) {
   cardsPic[i].addEventListener('click', function() {
     mainCardPic.src = picturesSrc[i];
-  })
+    currentCardPic.classList.remove('card__img-sm_selected');
+    currentCardPic = cardsPic[i];
+    currentCardPic.classList.add('card__img-sm_selected');
+    currentIndex = i;
+  });
 }
+
+cardArrowRight.addEventListener('click', function() {
+  if (currentIndex == cardsPic.length - 1) {
+    mainCardPic.src = picturesSrc[0];
+    currentCardPic.classList.remove('card__img-sm_selected');
+    currentCardPic = cardsPic[0];
+    currentCardPic.classList.add('card__img-sm_selected');
+    currentIndex = 0;
+  } else {
+    mainCardPic.src = picturesSrc[currentIndex + 1];
+    currentCardPic.classList.remove('card__img-sm_selected');
+    currentCardPic = cardsPic[currentIndex + 1];
+    currentCardPic.classList.add('card__img-sm_selected');
+    currentIndex += 1;
+  }
+})
+
+cardArrowLeft.addEventListener('click', function() {
+  if (currentIndex == 0) {
+    mainCardPic.src = picturesSrc[cardsPic.length - 1];
+    currentCardPic.classList.remove('card__img-sm_selected');
+    currentCardPic = cardsPic[cardsPic.length - 1];
+    currentCardPic.classList.add('card__img-sm_selected');
+    currentIndex = cardsPic.length - 1;
+  } else {
+    mainCardPic.src = picturesSrc[currentIndex - 1];
+    currentCardPic.classList.remove('card__img-sm_selected');
+    currentCardPic = cardsPic[currentIndex - 1];
+    currentCardPic.classList.add('card__img-sm_selected');
+    currentIndex -= 1;
+  }
+})
+
