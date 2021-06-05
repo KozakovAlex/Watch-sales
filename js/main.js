@@ -60,13 +60,6 @@ if (catalogButtonFilter) {
   }
 }
 
-// let cardsItems = document.querySelectorAll('.cards__item');
-// if (cardsItems.length % 2 !== 0) {
-//   console.log(cardsItems.length);
-//   cardsItems[cardsItems.length - 1].classList.add('last-card-wrapper');
-// }
-
-
 
 
 
